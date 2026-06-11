@@ -3,6 +3,7 @@
 ```yaml
 apiVersion: humans/v1
 kind: Human
+
 metadata:
   name: "Yuxiao Wang"
   aliases:
@@ -37,15 +38,15 @@ spec:
     - fitness
 
   probes:
-      readiness:
-        requires:
-          - caffeine
-          - logs
-      liveness:
-        requires:
-          - sleep
-          - curiosity
+    readiness:
+      requires:
+        - caffeine
+    liveness:
+      requires:
+        - sleep
 
+status:
+  phase: Running
   lastUpdated: continually
 
 endpoints:
