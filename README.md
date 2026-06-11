@@ -7,11 +7,14 @@ metadata:
   name: "Yuxiao Wang"
   aliases:
     - "Sayaka-4987"
+  deletionGracePeriodSeconds: unpredictable
 
 spec:
-  role: Software Engineer
   org: Microsoft Azure OpenAI
+  role: Software Engineer
   pronouns: she/her
+
+  restartPolicy: Always
 
   focus:
     - distributed systems
@@ -33,13 +36,15 @@ spec:
     - outdoors
     - fitness
 
-status:
-  phase: Running
-  conditions:
-    - type: ProductionExposure
-      status: "True"
-    - type: Stability
-      status: "Stable"  # Works under normal conditions 
+  probes:
+      readiness:
+        requires:
+          - caffeine
+          - logs
+      liveness:
+        requires:
+          - sleep
+          - curiosity
 
   lastUpdated: continually
 
