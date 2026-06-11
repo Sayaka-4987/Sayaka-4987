@@ -24,7 +24,7 @@ spec:
     - Kubernetes
     - Istio
     - Helm
-    - Azure
+    - Azure DevOps
 
   interests:
     - ACGN
