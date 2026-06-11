@@ -11,12 +11,6 @@ metadata:
   deletionGracePeriodSeconds: unpredictable
 
 spec:
-  org: Microsoft Azure OpenAI
-  role: Software Engineer
-  pronouns: she/her
-
-  restartPolicy: Always
-
   focus:
     - distributed systems
     - reliability
@@ -44,6 +38,8 @@ spec:
     liveness:
       requires:
         - sleep
+
+  restartPolicy: Always
 
 status:
   phase: Running
