@@ -1,4 +1,4 @@
-# kubectl get human yuxiao -o yaml
+# kubectl get human/yuxiao -o yaml
 
 ```yaml
 apiVersion: humans/v1
@@ -37,11 +37,9 @@ status:
   phase: Running
   conditions:
     - type: ProductionExposure
-      # Frequent incidents
       status: "True"
     - type: Stability
-      # Works under normal conditions
-      status: "MostlyStable" 
+      status: "Stable"  # Works under normal conditions 
 
   lastUpdated: continually
 
