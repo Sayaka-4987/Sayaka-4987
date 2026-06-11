@@ -1,5 +1,6 @@
 # kubectl get human yuxiao -o yaml
 
+```yaml
 apiVersion: humans/v1
 kind: Human
 metadata:
@@ -51,3 +52,4 @@ status:
 endpoints:
   blog: https://sayaka-4987.github.io/
   linkedin: https://www.linkedin.com/in/yuxiao-wang-042460245/
+```
