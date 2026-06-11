@@ -37,15 +37,11 @@ status:
   phase: Running
   conditions:
     - type: ProductionExposure
+      # Frequent incidents
       status: "True"
-      reason: Frequent incidents
     - type: Stability
-      status: "MostlyStable"
-      reason: Works under normal conditions
-
-  observations:
-    - Learns from production behavior
-    - Debugs via logs and intuition
+      # Works under normal conditions
+      status: "MostlyStable" 
 
   lastUpdated: continually
 
