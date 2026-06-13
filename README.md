@@ -5,9 +5,9 @@ apiVersion: humans/v1
 kind: Human
 
 metadata:
-  name: "Yuxiao Wang"
-  aliases:
-    - "Sayaka-4987"
+  name: Yuxiao Wang
+  alias: Sayaka-4987
+  namespace: production
   deletionGracePeriodSeconds: unpredictable
 
 spec:
