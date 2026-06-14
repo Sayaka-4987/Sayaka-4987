@@ -7,6 +7,7 @@ kind: Human
 metadata:
   name: Yuxiao Wang
   alias: Sayaka-4987
+  region: westus
   namespace: production
   deletionGracePeriodSeconds: unpredictable
 
