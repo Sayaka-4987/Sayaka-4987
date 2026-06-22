@@ -47,6 +47,5 @@ status:
   lastUpdated: continually
 
   endpoints:
-    blog: https://sayaka-4987.github.io/
     linkedin: https://www.linkedin.com/in/yuxiao-wang-042460245/
 ```
